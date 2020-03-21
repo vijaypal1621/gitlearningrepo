@@ -74,6 +74,14 @@ public:
 	}
 
 
+	int getmin()
+	{
+		if (pq.size == 0)
+			return -1;
+		return pq[0];
+	}
+
+
 };
 
 
