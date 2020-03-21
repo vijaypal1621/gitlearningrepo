@@ -76,7 +76,7 @@ public:
 
 	int getmin()
 	{
-		if (pq.size == 0)
+		if (pq.size() == 0)
 			return -1;
 		return pq[0];
 	}
@@ -84,5 +84,24 @@ public:
 
 };
 
+int main()
+{
+	priorityqueue pq;
+	pq.insert(3);
+	pq.insert(4);
+	pq.insert(6);
+	pq.insert(7);
+	pq.insert(132);
+	pq.insert(47);
 
+	cout << pq.getmin() << endl;
+
+    cout << pq.removeMin()<< endl;
+
+
+
+
+
+
+}
 
